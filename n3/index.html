@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colorful Creator | Deepak Soni Samples</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #fdfbff;
+            --primary: #ff007a; /* Hot Pink */
+            --secondary: #00d2ff; /* Sky Blue */
+            --grad: linear-gradient(135deg, #ff007a 0%, #ff7b00 100%);
+            --card-shadow: 0 10px 20px rgba(255, 0, 122, 0.1);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            background-color: var(--bg);
+            color: #2d3436;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 40px 20px;
+            background-image: radial-gradient(#ffe6f2 1px, transparent 1px);
+            background-size: 20px 20px;
+        }
+
+        .creator-container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* --- Progress Indicator --- */
+        .progress-tag {
+            font-size: 0.7rem;
+            color: #ff99cc;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+            font-weight: 800;
+            text-transform: uppercase;
+        }
+
+        .profile-ring {
+            width: 100px;
+            height: 100px;
+            background: var(--grad);
+            border-radius: 35% 65% 70% 30% / 30% 30% 70% 70%;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-weight: 800;
+            font-size: 2rem;
+            animation: blobby 6s infinite alternate;
+        }
+
+        @keyframes blobby {
+            from { border-radius: 35% 65% 70% 30% / 30% 30% 70% 70%; }
+            to { border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%; }
+        }
+
+        .name {
+            font-size: 2rem;
+            font-weight: 800;
+            background: var(--grad);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 5px;
+        }
+
+        .tagline {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #777;
+            margin-bottom: 30px;
+            display: block;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 35px;
+        }
+
+        .link-item {
+            padding: 18px;
+            text-decoration: none;
+            color: #fff;
+            background: #2d3436;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        .link-item:hover {
+            transform: scale(1.05) rotate(-1deg);
+            background: #000;
+        }
+
+        .link-insta { background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888); }
+        .link-yt { background: #ff0000; }
+        
+        /* Demo 4 Hook Style */
+        .link-next { background: #00d2ff; color: #fff; }
+
+        .cta-btn {
+            display: block;
+            background: var(--grad);
+            color: #fff;
+            padding: 20px;
+            text-decoration: none;
+            border-radius: 20px;
+            font-weight: 800;
+            font-size: 1rem;
+            transition: 0.3s;
+            box-shadow: 0 10px 25px rgba(255, 0, 122, 0.2);
+            text-transform: uppercase;
+        }
+
+        .cta-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(255, 0, 122, 0.4);
+        }
+
+        .sample-tag {
+            margin-top: 40px;
+            font-size: 0.7rem;
+            color: #aaa;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="creator-container">
+        <p class="progress-tag">Demo 3 of 4 • Explore different styles</p>
+
+        <div class="profile-ring">DW</div>
+
+        <h1 class="name">DEEPAK WEBCRAFTS</h1>
+        <span class="tagline">CREATING VIBES & PIXELS ✨</span>
+
+        <div class="links-wrapper">
+            <a href="https://www.instagram.com/deepaksonihr21" class="link-item link-insta" target="_blank">
+                DM FOR COLLABS 📸
+            </a>
+            <a href="https://youtube.com/@deepaksonihr21" class="link-item link-yt" target="_blank">
+                MY LATEST VIDEO🍿
+            </a>
+            <a href="mailto:deepakwebcrafts@gmail.com" class="link-item" style="color: #000; background: #fff; border: 2px solid #000;">
+                SAY HELLO! 👋
+            </a>
+            <a href="https://deepaksonihr21.github.io/basicdemohub/n4/" class="link-item link-next">
+                SEE NEXT STYLE → 💼
+            </a>
+        </div>
+
+        <a href="https://www.instagram.com/deepaksonihr21" class="cta-btn">GET YOUR WEBSITE STARTED AT ₹999 🚀</a>
+
+        <p class="sample-tag">Custom Bubbly Creator Design</p>
+        
+        <footer style="margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(0,0,0,0.05);">
+            <p style="color: #777; font-size: 0.8rem; font-weight: 600; letter-spacing: 0.5px;">
+                Designed & Developed with ❤️ by 
+                <span style="color: var(--primary); font-weight: 800;">Deepak Soni</span>
+            </p>
+            <p style="color: #ccc; font-size: 0.7rem; margin-top: 5px; letter-spacing: 2px;">MMXXVI • DEEPAK WEBCRAFTS</p>
+        </footer>
+    </div>
+
+</body>
+</html>

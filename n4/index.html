@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Professional Simple | Deepak Soni Samples</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --primary: #0f172a;
+        --accent: #2563eb;
+        --bg: #f8fafc;
+        --text: #1e293b;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text);
+        font-family: "Public Sans", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+      }
+
+      .prof-container {
+        width: 100%;
+        max-width: 450px;
+        background: #ffffff;
+        padding: 50px 30px;
+        border-radius: 8px;
+        box-shadow:
+          0 4px 6px -1px rgba(0, 0, 0, 0.1),
+          0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        text-align: center;
+        border-top: 5px solid var(--accent);
+      }
+
+      .progress-tag {
+        font-size: 0.7rem;
+        color: #94a3b8;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+
+      .initials {
+        width: 70px;
+        height: 70px;
+        background: var(--primary);
+        color: #fff;
+        border-radius: 4px;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 800;
+        font-size: 1.5rem;
+      }
+
+      .name {
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: var(--primary);
+        letter-spacing: -0.025em;
+        margin-bottom: 8px;
+      }
+
+      .title {
+        font-size: 0.85rem;
+        font-weight: 600;
+        color: var(--accent);
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        margin-bottom: 25px;
+        display: block;
+      }
+
+      .trigger-line {
+        font-size: 0.75rem;
+        color: #94a3b8;
+        margin-bottom: 20px;
+        font-style: italic;
+        line-height: 1.4;
+      }
+
+      .links-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        margin-bottom: 30px;
+      }
+
+      .link-item {
+        padding: 16px;
+        text-decoration: none;
+        color: var(--text);
+        background: #fff;
+        border: 1px solid #e2e8f0;
+        border-radius: 6px;
+        font-size: 0.95rem;
+        font-weight: 600;
+        transition: 0.2s ease;
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .link-item:hover {
+        background: #f1f5f9;
+        border-color: var(--accent);
+        padding-left: 20px;
+      }
+
+      .link-item::after {
+        content: "→";
+        color: var(--accent);
+        opacity: 0.5;
+      }
+
+      .cta-btn {
+        display: block;
+        background: var(--accent);
+        color: #fff;
+        padding: 18px;
+        text-decoration: none;
+        border-radius: 6px;
+        font-weight: 800;
+        font-size: 1rem;
+        letter-spacing: 0.5px;
+        box-shadow: 0 10px 20px rgba(37, 99, 235, 0.25);
+      }
+
+      .cta-btn:hover {
+        background: var(--primary);
+        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
+      }
+
+      .price-clarity {
+        font-size: 0.75rem;
+        color: #94a3b8;
+        margin-top: 12px;
+        font-weight: 500;
+      }
+
+      .upgrade-box {
+        margin-top: 35px;
+        padding: 20px;
+        background: #f8fafc;
+        border-radius: 10px;
+        border: 1px solid #e2e8f0;
+      }
+
+      .upgrade-box p {
+        font-size: 0.85rem;
+        color: #475569;
+        margin-bottom: 10px;
+        font-weight: 600;
+      }
+
+      .upgrade-link {
+        text-decoration: none;
+        color: #2563eb;
+        font-weight: 800;
+        font-size: 0.9rem;
+        transition: 0.3s;
+        display: inline-block;
+      }
+
+      .upgrade-link:hover {
+        color: var(--primary);
+        transform: translateX(5px);
+      }
+
+      .sample-tag {
+        margin-top: 40px;
+        font-size: 0.7rem;
+        color: #cbd5e1;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 2px;
+      }
+
+      footer {
+        margin-top: 10px;
+        font-size: 0.75rem;
+        color: #e2e8f0;
+        font-weight: 600;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="prof-container">
+      <p class="progress-tag">Demo 4 of 4 • Final Professional Style</p>
+
+      <div class="initials">DW</div>
+
+      <h1 class="name">DEEPAK WEBCRAFTS</h1>
+      <span class="title">Digital Architect</span>
+
+      <p class="trigger-line">
+        This is a basic version. Most creators upgrade for better reach &
+        conversions.
+      </p>
+
+      <div class="links-wrapper">
+        <a
+          href="https://youtube.com/@deepaksonihr21"
+          class="link-item"
+          target="_blank"
+          >YouTube Channel</a
+        >
+        <a
+          href="https://www.instagram.com/deepaksonihr21"
+          class="link-item"
+          target="_blank"
+          >Instagram Portfolio</a
+        >
+        <a href="mailto:deepakwebcrafts@gmail.com" class="link-item"
+          >Business Inquiry</a
+        >
+      </div>
+
+      <a href="https://www.instagram.com/deepaksonihr21" class="cta-btn"
+        >START YOUR WEBSITE @ ₹999 🚀</a
+      >
+
+      <p class="price-clarity">
+        Starting from ₹999 • Advanced setups available
+      </p>
+      <p style="font-size: 0.7rem; color: #94a3b8; margin-top: 8px">
+        Only limited projects accepted each month
+      </p>
+      <p style="font-size: 0.75rem; color: #64748b; margin-top: 20px">
+        This is the final basic version. Next level designs are in Advanced.
+      </p>
+      <div class="upgrade-box">
+        <p>Need more power, branding & client conversion?</p>
+        <a
+          href="https://deepaksonihr21.github.io/Advancedemohub/"
+          class="upgrade-link"
+        >
+          Unlock Advanced Experience → 🚀
+        </a>
+      </div>
+
+      <p class="sample-tag">Standard Identity Setup</p>
+      <footer>MMXXVI • DEEPAK WEBCRAFTS</footer>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEEPAKWEBCRAFTS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --accent: #bc13fe; 
+            --secondary: #00f2ff;
+            --bg: #030005;
+            --card-bg: rgba(255, 255, 255, 0.05);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            background: var(--bg);
+            color: #fff;
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            line-height: 1.6;
+            background: radial-gradient(circle at 50% -20%, #1e003d, #030005);
+        }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        .hero { padding: 100px 0 60px; text-align: center; }
+        .hero h1 { font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 800; line-height: 1.1; margin-bottom: 20px; }
+        .hero h1 span { color: var(--secondary); }
+        
+        .info-box {
+            background: var(--card-bg);
+            border: 1px solid rgba(255,255,255,0.1);
+            padding: 30px;
+            border-radius: 24px;
+            backdrop-filter: blur(10px);
+            margin-bottom: 80px;
+        }
+
+        .demo-grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); 
+            gap: 25px; 
+            margin-bottom: 80px;
+        }
+
+        .demo-card {
+            background: var(--card-bg);
+            border-radius: 24px;
+            border: 1px solid rgba(255,255,255,0.1);
+            overflow: hidden;
+            transition: 0.4s;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+        }
+
+        .popular-tag {
+            position: absolute;
+            top: 15px;
+            right: 15px;
+            background: var(--secondary);
+            color: #000;
+            padding: 5px 12px;
+            font-size: 0.7rem;
+            font-weight: 800;
+            border-radius: 50px;
+            z-index: 10;
+            text-transform: uppercase;
+        }
+
+        .demo-card:hover { transform: translateY(-10px); border-color: var(--secondary); }
+
+        .demo-preview { width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; }
+        .demo-content { padding: 25px; text-align: left; flex-grow: 1; display: flex; flex-direction: column; }
+        .demo-content h3 { font-size: 1.2rem; margin-bottom: 10px; }
+        .demo-content p { color: #888; font-size: 0.85rem; margin-bottom: 20px; flex-grow: 1; }
+
+        .btn-live {
+            display: block;
+            padding: 12px;
+            background: #fff;
+            color: #000;
+            text-decoration: none;
+            border-radius: 10px;
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-align: center;
+            transition: 0.3s;
+        }
+        .btn-live:hover { background: var(--secondary); }
+
+        .final-cta {
+            text-align: center;
+            padding: 80px 30px;
+            background: linear-gradient(to bottom, rgba(30, 0, 61, 0.3), #030005);
+            border-radius: 40px;
+            margin-bottom: 80px;
+            border: 1px solid rgba(188, 19, 254, 0.3);
+        }
+
+        .main-cta-btn {
+            padding: 20px 50px;
+            background: var(--accent);
+            color: #fff;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 800;
+            font-size: 1.2rem;
+            display: inline-block;
+            box-shadow: 0 10px 30px rgba(188, 19, 254, 0.4);
+            transition: 0.3s;
+        }
+        .main-cta-btn:hover { transform: scale(1.05); }
+
+        .urgency { 
+            color: #ff4757; 
+            font-size: 0.9rem; 
+            margin-top: 20px; 
+            font-weight: 700; 
+            letter-spacing: 1px;
+            text-transform: uppercase;
+        }
+
+        .upsell-section {
+            margin-top: 40px;
+            padding-top: 30px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+
+        .advanced-btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 12px 30px;
+            background: transparent;
+            color: var(--secondary);
+            border: 2px solid var(--secondary);
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: 700;
+            font-size: 0.9rem;
+            transition: 0.3s;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .advanced-btn:hover {
+            background: var(--secondary);
+            color: #000;
+            box-shadow: 0 0 20px rgba(0, 242, 255, 0.4);
+        }
+
+        footer { text-align: center; padding: 40px; color: #666; font-size: 0.8rem; }
+        footer span { color: #aaa; }
+        footer a { color: var(--secondary); text-decoration: none; font-weight: 600; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.2rem; }
+            .demo-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <section class="hero">
+        <h1>BASIC WEBSITES. <span>ELITE RESULTS.</span></h1>
+        <div class="info-box">
+            <p>A collection of premium basic websites for creators. Clean, fast, and mobile-friendly — I'll customize any style for your brand 👍</p>
+        </div>
+    </section>
+
+    <div class="demo-grid">
+        <div class="demo-card">
+            <div class="demo-preview" style="background: linear-gradient(45deg, #eee, #fff);"></div>
+            <div class="demo-content">
+                <h3>Minimal Clean</h3>
+                <p>Simple, high-trust white design for professional creators.</p>
+                <a href="https://deepaksonihr21.github.io/basic/n1/" target="_blank" class="btn-live">VIEW LIVE DEMO →</a>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <div class="popular-tag">Most Popular</div>
+            <div class="demo-preview" style="background: linear-gradient(45deg, #111, #bc13fe);"></div>
+            <div class="demo-content">
+                <h3>Dark Stealth</h3>
+                <p>Modern dark UI with neon glow. Premium tech feel.</p>
+                <a href="https://deepaksonihr21.github.io/basic/n2/" target="_blank" class="btn-live">VIEW LIVE DEMO →</a>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <div class="vibrant-tag"></div>
+            <div class="demo-preview" style="background: linear-gradient(45deg, #ff007a, #ff7b00);"></div>
+            <div class="demo-content">
+                <h3>Vibrant Creator</h3>
+                <p>Youthful energy with bold gradients and bubbly layouts.</p>
+                <a href="https://deepaksonihr21.github.io/basic/n3/" target="_blank" class="btn-live">VIEW LIVE DEMO →</a>
+            </div>
+        </div>
+
+        <div class="demo-card">
+            <div class="demo-preview" style="background: linear-gradient(45deg, #0f172a, #2563eb);"></div>
+            <div class="demo-content">
+                <h3>Business Sharp</h3>
+                <p>Clean, structured business identity setup.</p>
+                <a href="https://deepaksonihr21.github.io/basic/n4/" target="_blank" class="btn-live">VIEW LIVE DEMO →</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="final-cta">
+        <h2 style="margin-bottom: 20px;">Get your website for ₹999 🚀</h2>
+        <p style="color: #aaa; margin-bottom: 30px;">Choose any design, and I’ll customize it with your name, links, and branding.</p>
+        
+        <a href="https://www.instagram.com/deepakwebcrafts" class="main-cta-btn">DM ME ON INSTAGRAM 📲</a>
+        
+        <p class="urgency">⚠️ Limited slots available this week</p>
+
+        <div class="upsell-section">
+            <p style="color: #fff; font-weight: 600;">Want custom design or advanced features?</p>
+            <a href="https://deepaksonihr21.github.io/Advancedemohub/" class="advanced-btn">EXPLORE ADVANCED HUB 🚀</a>
+        </div>
+    </section>
+
+    <footer>
+        Designed by <span>Deepak Soni</span><br>
+        Instagram: <span>@deepakwebcrafts</span> • Email: <a href="mailto:deepakwebcrafts@gmail.com"><span>deepakwebcrafts@gmail.com</span></a><br>
+        <small style="letter-spacing: 3px; display:block; margin-top:10px;">MMXXVI • DEEPAKWEBCRAFTS</small>
+    </footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dark Stealth | Deepak Soni Samples</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #050505;
+        --card-bg: #111111;
+        --accent: #bc13fe; /* Neon Purple Glow */
+        --text-main: #ffffff;
+        --text-dim: #888888;
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        background-color: var(--bg);
+        color: var(--text-main);
+        font-family: "Inter", sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        padding: 40px 20px;
+        overflow-x: hidden;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        width: 300px;
+        height: 300px;
+        background: var(--accent);
+        filter: blur(150px);
+        opacity: 0.15;
+        z-index: -1;
+        top: 10%;
+      }
+
+      .dark-container {
+        width: 100%;
+        max-width: 420px;
+        text-align: center;
+      }
+
+      /* --- Progress Indicator --- */
+      .progress-tag {
+        font-size: 0.7rem;
+        color: #444;
+        margin-bottom: 25px;
+        letter-spacing: 2px;
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      .profile-img {
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(45deg, var(--accent), #00f2ff);
+        border-radius: 50%;
+        margin: 0 auto 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 900;
+        font-size: 2rem;
+        box-shadow: 0 0 20px rgba(188, 19, 254, 0.3);
+      }
+
+      .name {
+        font-size: 2.2rem;
+        font-weight: 900;
+        letter-spacing: -1px;
+        margin-bottom: 5px;
+        text-transform: uppercase;
+      }
+
+      .trust-tag {
+        font-size: 0.75rem;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+        display: block;
+      }
+
+      .links-wrapper {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 35px;
+      }
+
+      .link-item {
+        padding: 20px;
+        text-decoration: none;
+        color: var(--text-main);
+        background: var(--card-bg);
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 700;
+        transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .link-item:hover {
+        background: #1a1a1a;
+        border-color: var(--accent);
+        box-shadow: 0 0 15px rgba(188, 19, 254, 0.2);
+        transform: scale(1.02);
+      }
+
+      /* Next Demo Link Style */
+      .next-style-link {
+        border: 1px dashed var(--accent);
+        color: var(--accent);
+      }
+
+      .cta-btn {
+        display: block;
+        background: var(--accent);
+        color: #fff;
+        padding: 22px;
+        text-decoration: none;
+        border-radius: 12px;
+        font-weight: 900;
+        font-size: 1.1rem;
+        letter-spacing: 0.5px;
+        transition: 0.4s;
+        box-shadow: 0 5px 20px rgba(188, 19, 254, 0.4);
+        text-transform: uppercase;
+      }
+
+      .cta-btn:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 10px 30px rgba(188, 19, 254, 0.6);
+        filter: brightness(1.2);
+      }
+
+      /* Upgrade Seed */
+      .upgrade-seed {
+        font-size: 0.75rem;
+        color: #555;
+        margin-top: 15px;
+        font-weight: 600;
+        transition: 0.3s;
+      }
+
+      .upgrade-seed a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      .sample-tag {
+        margin-top: 50px;
+        font-size: 0.75rem;
+        color: #222;
+        font-style: italic;
+      }
+
+      footer {
+        margin-top: 15px;
+        font-size: 0.7rem;
+        color: #111;
+        letter-spacing: 3px;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="dark-container">
+      <p class="progress-tag">Demo 2 of 4 • Explore different styles</p>
+
+      <div class="profile-img">DW</div>
+
+      <h1 class="name">DEEPAK WebCrafts</h1>
+      <span class="trust-tag">PREMIUM DIGITAL ARCHITECT</span>
+
+      <div class="links-wrapper">
+        <a
+          href="https://www.instagram.com/deepakwebcrafts"
+          class="link-item"
+          target="_blank"
+        >
+          DM ON INSTAGRAM <span>📸</span>
+        </a>
+        <a
+          href="https://youtube.com/@deepaksonihr21"
+          class="link-item"
+          target="_blank"
+        >
+          YOUTUBE CHANNEL <span>🎥</span>
+        </a>
+        <a href="mailto:deepakwebcrafts@gmail.com" class="link-item">
+          BUSINESS EMAIL <span>✉️</span>
+        </a>
+        <a
+          href="https://deepaksonihr21.github.io/basicdemohub/n3/"
+          class="link-item next-style-link"
+        >
+          SEE NEXT STYLE → <span>📁</span>
+        </a>
+      </div>
+
+      <a href="https://www.instagram.com/deepakwebcrafts" class="cta-btn"
+        >GET YOUR WEBSITE STARTED AT ₹999 🚀</a
+      >
+
+      <p class="upgrade-seed">
+        Want animations & premium feel?
+        <a
+          href="
+          https://deepaksonihr21.github.io/Advancedemohub/"
+          >Advanced version available →</a
+        >
+      </p>
+
+      <p class="sample-tag">
+        Custom Dark Stealth Design — Unique for every creator
+      </p>
+      <footer>MMXXVI • DEEPAKWEBCRAFTS</footer>
+    </div>
+  </body>
+</html>
